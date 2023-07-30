@@ -1,0 +1,278 @@
+body {
+  font-family: 'Satoshi', sans-serif;
+  background-color: black;
+  position: relative;
+  background-size: cover;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg);
+  background-size: cover;
+}
+
+.head {
+  backdrop-filter: brightness(0.4);
+  height: 100vh;
+}
+
+header {
+  padding: 1rem; 
+  color: #ffffff; 
+}
+
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  height: 4rem; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  display: none;
+  margin-left: 0.75rem;
+  margin-left: 0.875rem;
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  ul {
+    display: flex;
+  }
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items a {
+  display: flex; 
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  margin-bottom: -0.25rem; 
+  align-items: center; 
+  border-bottom-width: 2px; 
+  border-color: transparent; 
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  text-decoration: underline; 
+  text-underline-offset: 4px; 
+}
+
+.logo {
+  display: flex; 
+  padding: 0.5rem; 
+  align-items: center; 
+}
+
+.logo-img {
+  width: 4rem; 
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .search {
+    margin-left: 1rem;
+  }
+}
+
+.search div {
+  display: flex;
+  align-items: center;
+}
+
+.search div span {
+  display: flex; 
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  left: 0; 
+  padding: 0 0.5rem; 
+  align-items: center; 
+}
+
+span button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+span button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.svg {
+  width: 1rem; 
+  height: 1rem; 
+  color: #1F2937; 
+}
+
+.search-input {
+  padding: 0.5rem 2.5rem 0.5rem 2rem;
+  border-radius: 0.375rem;
+  width: 8rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #F3F4F6;
+  background-color: transparent;
+  border: none;
+  transition: width 0.3s ease-in-out;
+  margin-right: 1rem;
+}
+
+.search-input:focus {
+  width: 12rem;
+  outline: none;
+}
+
+@media (min-width: 640px) {
+  .search-input {
+    width: 12rem;
+  }
+}
+
+div.star {
+  display: flex;
+  height: 100%;
+  margin-top: -5rem;
+}
+
+.star__unique1 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.star__unique4 {
+  display: grid;
+}
+
+.star__unique4 > img {
+  width: 13rem;
+}
+
+.star__unique4 > p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.star__unique2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.star__unique2 > p {
+  font-size: 12rem;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.star__unique2 img {
+  width: 24rem;
+}
+
+.star__unique3 {
+  width: 25%;
+}
+
+.star__unique5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.star__unique5 > div {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.star__unique6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: white;
+  text-align: center;
+}
+
+.star__unique7 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.star__unique8 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: white;
+  text-align: center;
+}
+
+.star__unique9 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+
+}
+
+.star__unique10 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+
+}
+
+.star__unique11 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.star__unique12 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: white;
+  text-align: center;
+}
+
+.star__unique13 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
