@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ISRO</title>
 	<Style>
-        body {
+  body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
@@ -96,9 +96,6 @@ h2 {
 
 				</div>
 			</header>
-           <h1 class="text-white"> STEPS TO DISPLAY VIDEO, MAKE NEW CHANNEL , MAKE 3 PLAYLISTS - LATEST, MISSION AND LIVE, ADD RESPECTIVE VIDEOS FROM ISROS CHANNEL TO PLAYLIST AND THEN GO TO https://console.developers.google.com/ Create a new project.
-    Enable the YouTube Data API v3 for your project.
-    Create credentials and obtain an API key. , IN SCRIPT IN CHANNELID REPLACE YOUR CHANNEL ID AND OPEN EACH PLAYLIST AND FROM URL AFTER list= copy playlist id, and paste in script tag last few lines </h1>
             <div class="grid-container">
                 <div class="latest-videos">
                   <h2>Latest Videos</h2>
@@ -116,8 +113,8 @@ h2 {
 </body>
 <Script>
   
-const apiKey = 'AIzaSyD2DRXP2OX2A_dXXnadzJSaAXN7G7dRelI';
-const channelId = 'UC4sT7l5gXwW1uqtk-v2uZ4A'; // ISRO's YouTube channel ID
+const apiKey = 'AIzaSyDW8FRhfV-ltFRR9ip1wk51XlSGf5rMkHk';
+const channelId = 'UCcwwhLXv4ZR0aBfaCbiTDOw'; // ISRO's YouTube channel ID
 
 // Function to fetch videos from YouTube Data API
 async function fetchVideos(playlistId) {
@@ -165,9 +162,9 @@ function displayVideos(playlistId, gridId) {
 
 // Display videos in each section
 document.addEventListener('DOMContentLoaded', () => {
-  displayVideos('YOUR_PLAYLIST_ID_FOR_LATEST_VIDEOS', 'latest-videos-grid');
-  displayVideos('YOUR_PLAYLIST_ID_FOR_MISSION_VIDEOS', 'mission-videos-grid');
-  displayVideos('YOUR_PLAYLIST_ID_FOR_LIVE_STREAMS', 'live-streams-grid');
+  displayVideos('PLFsPgWZpMwyQ1BRNFOKHQ5yLDDKOrN86Q', 'latest-videos-grid');
+  displayVideos('PLFsPgWZpMwyTynjzoHZrrWLVlw49-7VCD', 'mission-videos-grid');
+  displayVideos('PLFsPgWZpMwyTRQHI2lCeBcdbAGzNJu-Uj', 'live-streams-grid');
 });
 
     </script>
