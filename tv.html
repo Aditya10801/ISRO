@@ -136,15 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
     </script>
 
-<script>
-  // Function to detect if the user is on a mobile device
+<Script> // Function to detect if the user is on a mobile device
   function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
-
+  
   // Redirect if the user is on a mobile device
-  if (!isMobileDevice()) {
-    window.location.href = "error.html"; // Replace "index.html" with the URL of your main page
+  if (isMobileDevice()) {
+    window.location.href = "error.html"; // Replace with your desired mobile page URL
   }
-</script>
+</Script>
+</Script>
 </html>
