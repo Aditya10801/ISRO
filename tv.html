@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="tv.css">
 	<title>ISRO</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -56,21 +57,21 @@
               <div class="free"></div>
             </div>
                 <div class="latest-videos">
-                  <h2>Latest Videos</h2>
+                  <h2>Latest Videos -</h2>
                   <div class="video-grid" id="latest-videos-grid"></div>
                 </div>
                 <div class="section">
                   <div class="free"></div>
                 </div>
                 <div class="mission-videos">
-                  <h2>Mission Videos</h2>
+                  <h2>Mission Videos - </h2>
                   <div class="video-grid" id="mission-videos-grid"></div>
                 </div>
                 <div class="section">
                   <div class="free"></div>
                 </div>
                 <div class="live-streams">
-                  <h2>Live Streams</h2>
+                  <h2>Live Streams - </h2>
                   <div class="video-grid" id="live-streams-grid"></div>
                 </div>
               </div>
@@ -134,4 +135,16 @@ document.addEventListener('DOMContentLoaded', () => {
   displayVideos('PLFsPgWZpMwyTRQHI2lCeBcdbAGzNJu-Uj', 'live-streams-grid');
 });
     </script>
+
+<script>
+  // Function to detect if the user is on a mobile device
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Redirect if the user is on a mobile device
+  if (!isMobileDevice()) {
+    window.location.href = "error.html"; // Replace "index.html" with the URL of your main page
+  }
+</script>
 </html>

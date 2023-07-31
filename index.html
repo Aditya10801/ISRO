@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<meta charset="UTF-8">
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -10,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 	<title>ISRO</title>
-
+	
 </head>
 
 <body>
@@ -54,9 +56,9 @@
 				<div class="coll-grid">
 					<div>
 					</div>
-					<p class="isro-text">ISRO</p>
+					<p class="isro-text" data-aos="fade-up">ISRO</p>
 
-					<h1 class="isro-subtext">THE INDIAN SPACE RESEARCH ORGANISATION.</h1>
+					<h1 class="isro-subtext" data-aos="fade-up">THE INDIAN SPACE RESEARCH ORGANISATION.</h1>
 				</div>
 			</div>
     </div>
@@ -65,9 +67,9 @@
   <section>
     <div class="free"></div>
       <div class="information">
-        <div class="overview" style="font-family: 'Panchang', sans-serif;">Overview
+        <div class="overview" style="font-family: 'Panchang', sans-serif;" data-aos="fade-up">Overview
         </div>
-        <div class="over-text">
+        <div class="over-text" data-aos="fade-up">
           ISRO, India's space agency under DOS, develops
 				space technology for national needs. It conducts satellite missions, remote sensing, and promotes
 				science education. Headquartered in Bengaluru, it has centers in Thiruvananthapuram, Bengaluru,
@@ -78,10 +80,10 @@
 
       <div class="conter"></div>
       <div class="content">
-        <div class="facts" style="font-family: 'Panchang', sans-serif;">Quick Facts</div>
+        <div class="facts" style="font-family: 'Panchang', sans-serif;" data-aos="fade-up">Quick Facts</div>
 
         <div class="facts-div">
-          <div class="facts-subdiv">
+          <div class="facts-subdiv" data-aos="fade-up">
             <Div>
               <h1 class="founded">Founded in</h1>
               <h1 class="year">1969</h1>
@@ -109,15 +111,15 @@
   <div class="retro">
     <div class="border"></div>
     <div class="main">
-      <div class="missions" style="font-family: 'Panchang', sans-serif;">Missions
+      <div class="missions" style="font-family: 'Panchang', sans-serif;" data-aos="fade-up">Missions
 			</div>
-      <div class="mission-subtext">Department of Space (DOS) is Government of India department mandated with the execution of Indian Space Programme. </div>
+      <div class="mission-subtext" data-aos="fade-up">Department of Space (DOS) is Government of India department mandated with the execution of Indian Space Programme. </div>
     </div>
 
     <div class="grip">
-			<Div class="grid">
+			<Div class="grid" data-aos="fade-up">
 				<h1 class="grip-head"><ion-icon name="rocket-outline"></ion-icon></h1>
-				<h1 class="grip-sub">124</h1>
+				<h1 class="grip-sub" >124</h1>
 				<h1 class="grip-sub2">Space craft mission</h1>
 			</Div>
 
@@ -153,8 +155,23 @@
       
 		</div>
 		
-		<div class="missions-btn"><A href="missions.html"><button class="explore-btn">Explore More</button></A></div>
+		<div class="missions-btn" data-aos="fade-up"><A href="missions.html"><button class="explore-btn">Explore More</button></A></div>
   </div>
+  <script>
+  AOS.init();
+</script>
+
+<script>
+  // Function to detect if the user is on a mobile device
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Redirect if the user is on a mobile device
+  if (!isMobileDevice()) {
+    window.location.href = "error.html"; // Replace "index.html" with the URL of your main page
+  }
+</script>
 </body>
 
 </html>

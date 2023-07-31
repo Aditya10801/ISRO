@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=panchang@600&display=swap"
@@ -10,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ISRO</title>
 	<link rel="stylesheet" href="missions.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -50,7 +53,7 @@
         </div>
       </header>
       
-            <div class="star">
+            <div class="star" data-aos="fade-up">
                 <div class="star__unique1">
                     
                     <div class="star__unique4">
@@ -85,10 +88,10 @@
                 </div>
             </div>
 		
-            <div class="star wp-content">
+            <div class="star wp-content" data-aos="fade-up">
               <div class="star__unique1">
                   
-                  <div class="star__unique4">
+                  <div class="star__unique4" data-aos="fade-up">
                       <img src="cd-1.png"><p>Chandrayaan - 1</p>
                   </div>
               </div>
@@ -122,10 +125,10 @@
               </div>
           </div>
 
-          <div class="star wp-content">
+          <div class="star wp-content" data-aos="fade-up">
             <div class="star__unique1">
                 
-                <div class="star__unique4">
+                <div class="star__unique4" data-aos="fade-up">
                     <img src="cd-2.png"><p>Chandrayaan - 2</p>
                 </div>
             </div>
@@ -158,10 +161,10 @@
             </div>
         </div>
 
-        <div class="star wp-content">
+        <div class="star wp-content" data-aos="fade-up">
           <div class="star__unique1 wp-content">
               
-              <div class="star__unique4">
+              <div class="star__unique4" data-aos="fade-up">
                   <img src="cd-2.png"><p>Chandrayaan - 3
                 </p>
               </div>
@@ -200,7 +203,21 @@
 
 
 
-       
+      <script>
+        AOS.init();
+      </script>
+
+<script>
+  // Function to detect if the user is on a mobile device
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Redirect if the user is on a mobile device
+  if (!isMobileDevice()) {
+    window.location.href = "error.html"; // Replace "index.html" with the URL of your main page
+  }
+</script>
 </body>
 
 </html>

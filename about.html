@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<meta charset="UTF-8">
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -10,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="about.css">
 	<title>ISRO</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -57,12 +60,12 @@
       <div class="section">
         <div class="free"></div>
       </div>
-      <h2 class="about-heading">About Us</h2>
+      <h2 class="about-heading " data-aos="fade-up">About Us</h2>
 
 
       <div class="container">
         
-        <div class="text">
+        <div class="text" data-aos="fade-up">
             <p>
                 Indian Space Research Organisation (ISRO) is the space agency of India. The organisation is involved in science, engineering and technology to harvest the benefits of outer space for India and the mankind. ISRO is a major constituent of the Department of Space (DOS), Government of India. The department executes the Indian Space Programme primarily through various Centres or units within ISRO.
 
@@ -77,15 +80,28 @@ ISRO has its headquarters in Bengaluru. Its activities are spread across various
 The activities of ISRO are guided by its Chairman, who would also be the secretary of DOS and Chairman of Space commission – the apex body that formulates the policies and overseas the implementation of the Indian Space Programme.
             </p>
         </div>
-        <div class="chairman">
+        <div class="chairman" data-aos="fade-up">
             <img class="chairman-img" src="S._Somanath__Director_of_VSSC__ISRO__speaks_during_the_Heads_of_Agency_Plenary_of_the_70th_International_Astronautical_Congress__cropped_-removebg-preview.png" alt="">
             <p>Mr. S. Somanath</p>
-            <p class="text-chairman">Chairman ISRO</p>
         </div>
       </div>
       </div>
       </div>
+      <script>
+        AOS.init();
+      </script>
 
+<script>
+  // Function to detect if the user is on a mobile device
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Redirect if the user is on a mobile device
+  if (!isMobileDevice()) {
+    window.location.href = "error.html"; // Replace "index.html" with the URL of your main page
+  }
+</script>
     </body>
 
 </html>

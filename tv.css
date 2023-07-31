@@ -32,10 +32,13 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  justify-content: center;
 }
 
 .video-item {
   max-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .video-item img {
@@ -212,3 +215,9 @@ a {
 .free {
   border-top: 2px solid #ffffff;
 }
+
+.video-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1rem));
+}
+
