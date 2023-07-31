@@ -11,21 +11,17 @@ body {
   width: 100vw;
   background-image: url(artwork.png);
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically within the container */
 }
 
-.test{
+.test {
   backdrop-filter: brightness(0.4);
   height: 100vh;
 }
 
 .coll {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.coll-grid {
   text-align: center;
 }
 
@@ -46,9 +42,13 @@ body {
   margin: 0;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .isro-text {
+    font-size: 3rem;
+  }
 
+  .isro-subtext {
+    font-size: 0.8rem;
+  }
+}
