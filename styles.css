@@ -199,23 +199,19 @@ section {
 .information {
   display: flex;
   gap: 1.25rem;
-  height: 13rem;
 }
 
 .overview {
   margin-top: 1.25rem; 
   width: 50%; 
-  height: 100%; 
   font-size: 2.25rem;
   line-height: 2.5rem; 
   color: #ffffff; 
 }
 
 .over-text {
-  margin-top: 1.25rem; 
-  margin-bottom: 10rem; 
-  width: 50%; 
-  height: 100%; 
+  margin-top: 1.25rem;
+  width: 50%;
   font-size: 1.25rem;
   line-height: 1.75rem; 
   color: #ffffff; 
@@ -315,7 +311,7 @@ section {
   margin-bottom: 10rem; 
   width: 50%; 
   height: 100%; 
-  font-size: 1.25rem;
+  font-size: 2.25rem;
   line-height: 1.75rem; 
   color: #ffffff; 
 }
@@ -403,4 +399,98 @@ section {
 
 .missions-btn a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .coll-grid div {
+    margin: 1rem;
+  }
+
+  .isro-text {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+
+  .isro-subtext {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  .logo-img {
+    width: 3rem;
+  }
+
+  .search-input {
+    padding: 0.25rem 1.5rem 0.25rem 1rem;
+    font-size: 0.75rem;
+    width: 6rem;
+  }
+
+  .overview,
+  .facts,
+  .missions {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .over-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .facts-div {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .founded,
+  .year,
+  .founder {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .retro {
+    padding: 2rem;
+  }
+
+  .grip {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .grip-head {
+    font-size: 1.25rem;
+  }
+
+  .grip-sub {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .grip-sub2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .grip > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .missions-btn {
+    margin-top: 0;
+  }
+  
 }

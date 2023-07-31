@@ -20,16 +20,16 @@
         <div class="navbar">
           <ul>
             <li class="nav-items">
-							<a rel="noopener noreferrer" href="#">Missions</a>
+							<a rel="noopener noreferrer" href="missions.html">Missions</a>
 						</li>
             <li class="nav-items">
-							<a rel="noopener noreferrer" href="#">ISRO TV</a>
+							<a rel="noopener noreferrer" href="tv.html">ISRO TV</a>
 						</li>
             <li class="nav-items">
-							<a rel="noopener noreferrer" href="#">About</a>
+							<a rel="noopener noreferrer" href="about.html">About</a>
 						</li>
           </ul>
-          <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="logo">
+          <a rel="noopener noreferrer" href="index.html" aria-label="Back to homepage" class="logo">
 						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1059px-Indian_Space_Research_Organisation_Logo.svg.png"
 							class="logo-img">
 					</a>
@@ -52,20 +52,31 @@
       </header>
 			
             <div class="grid-container">
+              <div class="section">
+              <div class="free"></div>
+            </div>
                 <div class="latest-videos">
                   <h2>Latest Videos</h2>
                   <div class="video-grid" id="latest-videos-grid"></div>
                 </div>
+                <div class="section">
+                  <div class="free"></div>
+                </div>
                 <div class="mission-videos">
                   <h2>Mission Videos</h2>
                   <div class="video-grid" id="mission-videos-grid"></div>
+                </div>
+                <div class="section">
+                  <div class="free"></div>
                 </div>
                 <div class="live-streams">
                   <h2>Live Streams</h2>
                   <div class="video-grid" id="live-streams-grid"></div>
                 </div>
               </div>
+
 </body>
+
 <Script>
   
 const apiKey = 'AIzaSyDW8FRhfV-ltFRR9ip1wk51XlSGf5rMkHk';
@@ -99,11 +110,12 @@ function displayVideos(playlistId, gridId) {
 
         // Create HTML elements for each video
         const videoElement = document.createElement('div');
-        videoElement.innerHTML = `
+        videoElement.innerHTML = `<div class="video-div">
           <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
             <img src="${videoThumbnail}" alt="${videoTitle}">
-            <p>${videoTitle}</p>
+            <p style="color:white; width:25rem;">${videoTitle}</p>
           </a>
+          </div>
         `;
 
         // Append the video element to the grid
